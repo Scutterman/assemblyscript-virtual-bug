@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ascii Lemmings</title>
+    </head>
+    <body>
+        <script src="/assemblyscript-loader.js"></script>
+        <script>
+            let loadedModule
+            const importObject = {
+                index: {
+                    log(msgPtr) {
+                        console.log(loadedModule.exports.__getString(msgPtr))
+                    }
+                },
+                env: {
+                    abort(_msg, _file, line, column) {
+                        console.error("abort called at index.ts:" + line + ":" + column);
+                    },
+                }
+            };
+
+            async function init() {
+                const response = await fetch("/build/test.wasm?t=" + Date.now());
+                const buffer = await response.arrayBuffer();
+                loadedModule = await loader.instantiate(
+                    buffer,
+                    importObject
+                );
+                try {
+                    loadedModule.instance.exports.start()
+                } catch (e) {
+                    console.error(e)
+                }
+            }
+
+            init().catch(console.error())
+        </script>
+    </body>
+</html>
