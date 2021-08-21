@@ -24,10 +24,10 @@
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
  (global $~lib/ASC_LOW_MEMORY_LIMIT i32 (i32.const 0))
  (global $~lib/ASC_SHRINK_LEVEL i32 (i32.const 0))
- (global $~lib/rt/__rtti_base i32 (i32.const 928))
- (global $~lib/memory/__data_end i32 (i32.const 1036))
- (global $~lib/memory/__stack_pointer (mut i32) (i32.const 17420))
- (global $~lib/memory/__heap_base i32 (i32.const 17420))
+ (global $~lib/rt/__rtti_base i32 (i32.const 992))
+ (global $~lib/memory/__data_end i32 (i32.const 1100))
+ (global $~lib/memory/__stack_pointer (mut i32) (i32.const 17484))
+ (global $~lib/memory/__heap_base i32 (i32.const 17484))
  (memory $0 1)
  (data (i32.const 12) "\1c\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 44) ",\00\00\00\00\00\00\00\00\00\00\00\05\00\00\00\10\00\00\00 \00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
@@ -43,10 +43,11 @@
  (data (i32.const 524) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\1c\00\00\00I\00n\00v\00a\00l\00i\00d\00 \00l\00e\00n\00g\00t\00h\00")
  (data (i32.const 572) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\1a\00\00\00~\00l\00i\00b\00/\00a\00r\00r\00a\00y\00.\00t\00s\00\00\00")
  (data (i32.const 620) "|\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00^\00\00\00E\00l\00e\00m\00e\00n\00t\00 \00t\00y\00p\00e\00 \00m\00u\00s\00t\00 \00b\00e\00 \00n\00u\00l\00l\00a\00b\00l\00e\00 \00i\00f\00 \00a\00r\00r\00a\00y\00 \00i\00s\00 \00h\00o\00l\00e\00y\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 748) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00*\00\00\00O\00b\00j\00e\00c\00t\00 \00a\00l\00r\00e\00a\00d\00y\00 \00p\00i\00n\00n\00e\00d\00\00\00")
- (data (i32.const 812) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00O\00b\00j\00e\00c\00t\00 \00i\00s\00 \00n\00o\00t\00 \00p\00i\00n\00n\00e\00d\00\00\00\00\00")
- (data (i32.const 876) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\0e\00\00\00F\00a\00l\00l\00i\00n\00g\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 928) "\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00 \00\00\00\00\00\00\00\02A\00\00\00\00\00\00\02\t\00\00\00\00\00\00 \00\00\00\08\00\00\00 \00\00\00\t\00\00\00 \00\00\00\00\00\00\00 \00\00\00\04\00\00\00 \00\00\00\04\00\00\00 \00\00\00\04\00\00\00")
+ (data (i32.const 748) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00&\00\00\00A\00b\00o\00u\00t\00 \00t\00o\00 \00s\00h\00o\00w\00 \00l\00a\00b\00e\00l\00\00\00\00\00\00\00")
+ (data (i32.const 812) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00*\00\00\00O\00b\00j\00e\00c\00t\00 \00a\00l\00r\00e\00a\00d\00y\00 \00p\00i\00n\00n\00e\00d\00\00\00")
+ (data (i32.const 876) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00O\00b\00j\00e\00c\00t\00 \00i\00s\00 \00n\00o\00t\00 \00p\00i\00n\00n\00e\00d\00\00\00\00\00")
+ (data (i32.const 940) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\0e\00\00\00F\00a\00l\00l\00i\00n\00g\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 992) "\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00 \00\00\00\00\00\00\00\02A\00\00\00\00\00\00\02\t\00\00\00\00\00\00 \00\00\00\08\00\00\00 \00\00\00\t\00\00\00 \00\00\00\00\00\00\00 \00\00\00\04\00\00\00 \00\00\00\04\00\00\00 \00\00\00\04\00\00\00")
  (table $0 1 funcref)
  (elem $0 (i32.const 1))
  (export "lemmings" (global $assembly/index/lemmings))
@@ -3964,7 +3965,7 @@
    i32.const 3
    i32.eq
    if
-    i32.const 768
+    i32.const 832
     i32.const 208
     i32.const 337
     i32.const 7
@@ -3996,7 +3997,7 @@
   i32.const 3
   i32.ne
   if
-   i32.const 832
+   i32.const 896
    i32.const 208
    i32.const 351
    i32.const 5
@@ -4069,7 +4070,7 @@
   drop
  )
  (func $assembly/actions/fall/Fall#label (param $0 i32) (result i32)
-  i32.const 896
+  i32.const 960
  )
  (func $assembly/actions/lemmingAction/LemmingAction#label@virtual (param $0 i32) (result i32)
   (local $1 i32)
@@ -4175,10 +4176,10 @@
   i32.const 144
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 768
+  i32.const 832
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 832
+  i32.const 896
   local.get $0
   call $~lib/rt/itcms/__visit
  )
@@ -4352,8 +4353,8 @@
   global.get $~lib/memory/__data_end
   i32.lt_s
   if
-   i32.const 17440
-   i32.const 17488
+   i32.const 17504
+   i32.const 17552
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -4451,6 +4452,13 @@
     call $~lib/array/Array<assembly/lemming/Lemming>#__get
     i32.const 1
     call $assembly/lemming/Lemming#set:isClimber
+    i32.const 768
+    local.set $3
+    global.get $~lib/memory/__stack_pointer
+    local.get $3
+    i32.store
+    local.get $3
+    call $assembly/index/log
     global.get $assembly/index/lemmings
     local.set $3
     global.get $~lib/memory/__stack_pointer

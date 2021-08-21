@@ -11,6 +11,7 @@ export class Level extends BaseLevel {
   public processLemmingSelect(): boolean {
     for (let i = 0; i < lemmings.length; i++) {
       lemmings[i].isClimber = true
+      log('About to show label')
       log(lemmings[i].action.label())
     }
 
